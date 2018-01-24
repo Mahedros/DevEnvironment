@@ -11,6 +11,8 @@ set number
 " F5 Toggles ignorecase setting
 nmap <F5> :set ignorecase! ignorecase?
 
+nnoremap <F7> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 " Save as sudo
 " cmap w!! w !sudo tee > /dev/null %
 command! -nargs=1 Count %s/<args>//gn
