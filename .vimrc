@@ -31,3 +31,5 @@ nnoremap <silent> <Home> :call ExtendedHome()<CR>
 inoremap <silent> <Home> <C-O>:call ExtendedHome()<CR>
 
 cmap loadrc so $MYVIMRC
+
+source ~/.vim/comments.vim
