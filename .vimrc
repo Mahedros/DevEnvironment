@@ -30,6 +30,9 @@ endfunction
 nnoremap <silent> <Home> :call ExtendedHome()<CR>
 inoremap <silent> <Home> <C-O>:call ExtendedHome()<CR>
 
+command -nargs=1 SetIndent set tabstop=<args> <bar> set shiftwidth=<args> <bar> set softtabstop=<args>
+cmap setIndent SetIndent
+
 cmap loadrc so $MYVIMRC
 
 source ~/.vim/comments.vim
