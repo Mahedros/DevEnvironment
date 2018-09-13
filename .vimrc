@@ -8,6 +8,8 @@ set ignorecase
 set smartcase
 set number
 
+set diffopt=filler,vertical
+
 " F5 Toggles ignorecase setting
 nmap <F5> :set ignorecase! ignorecase?
 
